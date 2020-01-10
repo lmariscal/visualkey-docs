@@ -1,0 +1,15 @@
+site_name: 'VisualKey'
+site_description: 'Computer graphics sketchbook and library.'
+site_author: 'SAE Institute México'
+site_url: 'https://visualkey.org'
+repo_name: 'lmariscal/visualkey'
+repo_url: 'https://github.com/lmariscal/visualkey'
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
