@@ -8,8 +8,8 @@ Two dimensional vector data structure.
 
 ### Fields
 
-- `x` First component of the vector. (Float)
-- `y` Second component of the vector. (Float)
+- `x` First component of the vector. (float)
+- `y` Second component of the vector. (float)
 
 ### Constructors
 
@@ -83,9 +83,9 @@ Three dimensional vector data structure.
 
 ### Fields
 
-- `x` First component of the vector. (Float)
-- `y` Second component of the vector. (Float)
-- `z` Third component of the vector. (Float)
+- `x` First component of the vector. (float)
+- `y` Second component of the vector. (float)
+- `z` Third component of the vector. (float)
 
 ### Constructors
 
@@ -164,10 +164,10 @@ Four dimensional vector data structure.
 
 ### Fields
 
-- `x` First component of the vector. (Float)
-- `y` Second component of the vector. (Float)
-- `z` Third component of the vector. (Float)
-- `z` Fourth component of the vector. (Float)
+- `x` First component of the vector. (float)
+- `y` Second component of the vector. (float)
+- `z` Third component of the vector. (float)
+- `z` Fourth component of the vector. (float)
 
 ### Constructors
 
@@ -356,10 +356,10 @@ Quaternion data structure.
 
 ### Fields
 
-- `x` First component of the quaternion. (Float)
-- `y` Second component of the quaternion. (Float)
-- `z` Third component of the quaternion. (Float)
-- `w` Fourth component of the quaternion. (Float)
+- `x` First component of the quaternion. (float)
+- `y` Second component of the quaternion. (float)
+- `z` Third component of the quaternion. (float)
+- `w` Fourth component of the quaternion. (float)
 
 ### Constructors
 
