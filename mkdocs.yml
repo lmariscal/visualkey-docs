@@ -3,7 +3,7 @@ site_description: 'Computer graphics sketchbook.'
 site_author: 'Leonardo Mariscal'
 site_url: 'https://visualkey.org'
 edit_uri: 'https://github.com/lmariscal/visualkey-docs/edit/master/docs'
-copyright: 'Copyright &copy; 2020 SAE Institute México'
+copyright: 'Copyright &copy; 2020–<script>document.write(new Date().getFullYear())</script> SAE Institute México'
 repo_name: 'lmariscal/visualkey'
 repo_url: 'https://github.com/lmariscal/visualkey'
 theme:
@@ -24,13 +24,17 @@ theme:
         minify_html: true
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/lmariscal'
-    - type: 'twitter'
+    - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/lmariscal_'
 markdown_extensions:
-  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
   - admonition
+  - pymdownx.tabbed
+  - pymdownx.superfences
 nav:
   - 'Getting Started': 'index.md'
   - 'Window': 'window.md'
