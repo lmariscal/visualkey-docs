@@ -1,5 +1,7 @@
 # Math
 
+Data structures that are useful when working with lineal algebra.
+
 ## Vec2
 
 Two dimensional vector data structure.

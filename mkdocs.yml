@@ -37,6 +37,11 @@ markdown_extensions:
   - pymdownx.superfences
 nav:
   - 'Getting Started': 'index.md'
-  - 'Window': 'window.md'
+  - 'Audio': 'audio.md'
   - 'Graphics': 'graphics.md'
+  - 'Input': 'audio.md'
   - 'Math': 'math.md'
+  - 'Shader': 'audio.md'
+  - 'Time': 'audio.md'
+  - 'Texture': 'audio.md'
+  - 'Window': 'window.md'
