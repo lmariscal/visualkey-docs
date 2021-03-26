@@ -1,0 +1,1445 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Computer graphics sketchbook.">
+      
+      
+      
+        <meta name="author" content="Leonardo Mariscal">
+      
+      
+        <link rel="canonical" href="https://visualkey.org/math/">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Math - VisualKey</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="teal">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#math" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://visualkey.org" title="VisualKey" class="md-header-nav__button md-logo" aria-label="VisualKey">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            VisualKey
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Math
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/lmariscal/visualkey/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lmariscal/visualkey
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://visualkey.org" title="VisualKey" class="md-nav__button md-logo" aria-label="VisualKey">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    VisualKey
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/lmariscal/visualkey/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lmariscal/visualkey
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        Audio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/" class="md-nav__link">
+        Graphics
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../input/" class="md-nav__link">
+        Input
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Math
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Math
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vec2" class="md-nav__link">
+    Vec2
+  </a>
+  
+    <nav class="md-nav" aria-label="Vec2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vec3" class="md-nav__link">
+    Vec3
+  </a>
+  
+    <nav class="md-nav" aria-label="Vec3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_1" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vec4" class="md-nav__link">
+    Vec4
+  </a>
+  
+    <nav class="md-nav" aria-label="Vec4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_2" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_2" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mat3" class="md-nav__link">
+    Mat3
+  </a>
+  
+    <nav class="md-nav" aria-label="Mat3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_3" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_3" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_3" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mat4" class="md-nav__link">
+    Mat4
+  </a>
+  
+    <nav class="md-nav" aria-label="Mat4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_4" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_4" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_4" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quat" class="md-nav__link">
+    Quat
+  </a>
+  
+    <nav class="md-nav" aria-label="Quat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_5" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_5" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_5" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathv" class="md-nav__link">
+    MathV
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shader/" class="md-nav__link">
+        Shader
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../time/" class="md-nav__link">
+        Time
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../texture/" class="md-nav__link">
+        Texture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../window/" class="md-nav__link">
+        Window
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../camera/" class="md-nav__link">
+        Camera
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../light/" class="md-nav__link">
+        Light
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text/" class="md-nav__link">
+        Text
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vec2" class="md-nav__link">
+    Vec2
+  </a>
+  
+    <nav class="md-nav" aria-label="Vec2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vec3" class="md-nav__link">
+    Vec3
+  </a>
+  
+    <nav class="md-nav" aria-label="Vec3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_1" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vec4" class="md-nav__link">
+    Vec4
+  </a>
+  
+    <nav class="md-nav" aria-label="Vec4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_2" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_2" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mat3" class="md-nav__link">
+    Mat3
+  </a>
+  
+    <nav class="md-nav" aria-label="Mat3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_3" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_3" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_3" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mat4" class="md-nav__link">
+    Mat4
+  </a>
+  
+    <nav class="md-nav" aria-label="Mat4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_4" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_4" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_4" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quat" class="md-nav__link">
+    Quat
+  </a>
+  
+    <nav class="md-nav" aria-label="Quat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_5" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors_5" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_5" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathv" class="md-nav__link">
+    MathV
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/lmariscal/visualkey-docs/edit/master/docs/math.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="math">Math</h1>
+<p>Data structures that are useful when working with lineal algebra.</p>
+<h2 id="vec2">Vec2</h2>
+<p>Two dimensional vector data structure.</p>
+<h3 id="fields">Fields</h3>
+<ul>
+<li><code>x</code> First component of the vector. (float)</li>
+<li><code>y</code> Second component of the vector. (float)</li>
+</ul>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><code class="highlight"><span class="n">Vec2</span><span class="p">(</span><span class="kt">float</span> <span class="n">n</span><span class="p">)</span></code> Take a scalar and make all components this value.</li>
+<li><code class="highlight"><span class="n">Vec2</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">)</span></code> Take one scalar for each component.</li>
+<li><code class="highlight"><span class="n">Vec2</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">v</span><span class="p">)</span></code> Convert a <code>Vec3</code> to <code>Vec2</code>, losing the third component.</li>
+<li><code class="highlight"><span class="n">Vec2</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">v</span><span class="p">)</span></code> Convert a <code>Vec4</code> to <code>Vec2</code>, losing the third and fourth component.</li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><code class="highlight"><span class="na">[]</span></code> Operator overload to access each respective component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Vec2</span> <span class="n">i</span><span class="p">,</span> <span class="n">Vec2</span> <span class="n">j</span><span class="p">)</span></code> Operator overload.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Vec2</span> <span class="n">i</span><span class="p">,</span> <span class="n">Vec2</span> <span class="n">j</span><span class="p">)</span></code> Operator overload.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Vec2</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">/(</span><span class="n">Vec2</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Vec2</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Vec2</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="n">Set</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">)</span></code> Set the components of the <code>Vec2</code>.</li>
+<li><code class="highlight"><span class="n">MagnitudeSqrt</span><span class="p">()</span></code> Calculates the magnitude of the <code>Vec2</code>, squared.</li>
+<li><code class="highlight"><span class="n">Magnitude</span><span class="p">()</span></code> Calculates the magnitude of the <code>Vec2</code>.</li>
+<li><code class="highlight"><span class="n">Normalize</span><span class="p">()</span></code> Normalize the <code>Vec2</code> to a length of 1.</li>
+<li><code class="highlight"><span class="n">Dot</span><span class="p">(</span><span class="n">Vec2</span> <span class="n">other</span><span class="p">)</span></code> Calculates the dot product of two <code>Vec2</code>.</li>
+<li><code class="highlight"><span class="n">Angle</span><span class="p">(</span><span class="n">Vec2</span> <span class="n">other</span><span class="p">)</span></code> Calculates the angle respective to other <code>Vec2</code>.</li>
+<li><code class="highlight"><span class="n">DistanceSqrt</span><span class="p">(</span><span class="n">Vec2</span> <span class="n">other</span><span class="p">)</span></code> Calculate the distance between two <code>Vec2</code>, squared.</li>
+<li>
+<p><code class="highlight"><span class="n">Distance</span><span class="p">(</span><span class="n">Vec2</span> <span class="n">other</span><span class="p">)</span></code> Calculate the distance between two <code>Vec2</code>.</p>
+</li>
+<li>
+<p><code class="highlight"><span class="k">static</span> <span class="nf">down</span><span class="p">()</span></code> Returns <code>Vec2(0, -1)</code>.</p>
+</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">left</span><span class="p">()</span></code> Returns <code>Vec2(-1, 0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">up</span><span class="p">()</span></code> Returns <code>Vec2(0, 1)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">right</span><span class="p">()</span></code> Returns <code>Vec2(1, 0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">zero</span><span class="p">()</span></code> Returns <code>Vec2(0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">one</span><span class="p">()</span></code> Returns <code>Vec2(1)</code>.</li>
+</ul>
+<h3 id="example">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">VisualKey</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">App</span> <span class="p">{</span>
+
+  <span class="n">Window</span> <span class="n">window</span><span class="p">;</span>
+  <span class="n">Vec2</span> <span class="n">pos</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vec2</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
+
+  <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">x</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vec2</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">20</span><span class="p">);</span>
+    <span class="n">x</span> <span class="p">+=</span> <span class="m">3</span><span class="p">;</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="c1">// (x: 13, y: 23)</span>
+
+    <span class="kt">var</span> <span class="n">d</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="k">new</span> <span class="n">Vec2</span><span class="p">(</span><span class="m">20</span><span class="p">,</span> <span class="m">10</span><span class="p">));</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">d</span><span class="p">);</span> <span class="c1">// 490</span>
+
+    <span class="kt">var</span> <span class="n">n</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">Normalize</span><span class="p">();</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="c1">// (x: 0.4920573, y: 0.8705629)</span>
+
+    <span class="n">window</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Window</span><span class="p">((</span><span class="kt">uint</span><span class="p">)</span><span class="n">size</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="kt">uint</span><span class="p">)</span><span class="n">size</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Key</span><span class="p">.</span><span class="n">A</span><span class="p">.</span><span class="n">IsPressed</span><span class="p">())</span>
+      <span class="n">pos</span><span class="p">.</span><span class="n">x</span> <span class="p">+=</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span> <span class="p">*</span> <span class="m">1</span><span class="p">;</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;x: &quot;</span> <span class="p">+</span> <span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">);</span> <span class="c1">// Same as pos[0]</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="vec3">Vec3</h2>
+<p>Three dimensional vector data structure.</p>
+<h3 id="fields_1">Fields</h3>
+<ul>
+<li><code>x</code> First component of the vector. (float)</li>
+<li><code>y</code> Second component of the vector. (float)</li>
+<li><code>z</code> Third component of the vector. (float)</li>
+</ul>
+<h3 id="constructors_1">Constructors</h3>
+<ul>
+<li><code class="highlight"><span class="n">Vec3</span><span class="p">(</span><span class="kt">float</span> <span class="n">n</span><span class="p">)</span></code> Take a scalar and make all components this value.</li>
+<li><code class="highlight"><span class="n">Vec3</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">)</span></code> Take one scalar for each component.</li>
+<li><code class="highlight"><span class="n">Vec3</span><span class="p">(</span><span class="n">Vec2</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">)</span></code> Convert a <code>Vec2</code> to <code>Vec3</code>, adding the third component.</li>
+<li><code class="highlight"><span class="n">Vec3</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">v</span><span class="p">)</span></code> Convert a <code>Vec4</code> to <code>Vec3</code>, losing the fourth component.</li>
+</ul>
+<h3 id="methods_1">Methods</h3>
+<ul>
+<li><code class="highlight"><span class="na">[]</span></code> Operator overload to access each respective component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Vec3</span> <span class="n">v</span><span class="p">,</span> <span class="n">Mat3</span> <span class="n">m</span><span class="p">)</span></code> Operator overload, multiply <code>Vec3</code> to <code>Mat3</code>.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Vec3</span> <span class="n">i</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">j</span><span class="p">)</span></code> Operator overload.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Vec3</span> <span class="n">i</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">j</span><span class="p">)</span></code> Operator overload.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Vec3</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">/(</span><span class="n">Vec3</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Vec3</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Vec3</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="n">Set</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">)</span></code> Set the components of the <code>Vec3</code>.</li>
+<li><code class="highlight"><span class="n">MagnitudeSqrt</span><span class="p">()</span></code> Calculates the magnitude of the <code>Vec3</code>, squared.</li>
+<li><code class="highlight"><span class="n">Magnitude</span><span class="p">()</span></code> Calculates the magnitude of the <code>Vec3</code>.</li>
+<li><code class="highlight"><span class="n">Normalize</span><span class="p">()</span></code> Normalize the <code>Vec3</code> to a length of 1.</li>
+<li><code class="highlight"><span class="n">Dot</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">other</span><span class="p">)</span></code> Calculates the dot product of two <code>Vec3</code>.</li>
+<li><code class="highlight"><span class="n">Angle</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">other</span><span class="p">)</span></code> Calculates the angle respective to other <code>Vec3</code>.</li>
+<li><code class="highlight"><span class="n">Cross</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">other</span><span class="p">)</span></code> Calculates the cross product respective to other <code>Vec3</code>.</li>
+<li><code class="highlight"><span class="n">DistanceSqrt</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">other</span><span class="p">)</span></code> Calculate the distance between two <code>Vec3</code>, squared.</li>
+<li><code class="highlight"><span class="n">Distance</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">other</span><span class="p">)</span></code> Calculate the distance between two <code>Vec3</code>.</li>
+<li>
+<p><code class="highlight"><span class="n">RGB</span><span class="p">()</span></code> Return a new <code>Vec3</code> with same components divided by <code>255.0f</code>.</p>
+</li>
+<li>
+<p><code class="highlight"><span class="k">static</span> <span class="nf">back</span><span class="p">()</span></code> Returns <code>Vec3(0, 0, -1)</code>.</p>
+</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">down</span><span class="p">()</span></code> Returns <code>Vec3(0, -1, 0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">left</span><span class="p">()</span></code> Returns <code>Vec3(-1, 0, 0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">forward</span><span class="p">()</span></code> Returns <code>Vec3(0, 0, 1)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">up</span><span class="p">()</span></code> Returns <code>Vec3(0, 1, 0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">right</span><span class="p">()</span></code> Returns <code>Vec3(1, 0, 0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">zero</span><span class="p">()</span></code> Returns <code>Vec3(0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">one</span><span class="p">()</span></code> Returns <code>Vec3(1)</code>.</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">VisualKey</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">App</span> <span class="p">{</span>
+
+  <span class="n">Window</span> <span class="n">window</span><span class="p">;</span>
+  <span class="n">Vec3</span> <span class="n">pos</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vec3</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
+
+  <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">x</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vec3</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">30</span><span class="p">);</span>
+    <span class="n">x</span> <span class="p">+=</span> <span class="m">3</span><span class="p">;</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="c1">// (x: 13, y: 23, z: 33)</span>
+
+    <span class="kt">var</span> <span class="n">d</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="k">new</span> <span class="n">Vec3</span><span class="p">(</span><span class="m">30</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">10</span><span class="p">));</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">d</span><span class="p">);</span> <span class="c1">// 1180</span>
+
+    <span class="kt">var</span> <span class="n">n</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">Normalize</span><span class="p">();</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="c1">// (x: 0.3075255, y: 0.5440835, z: 0.7806416)</span>
+
+    <span class="n">window</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Window</span><span class="p">(</span><span class="m">1280</span><span class="p">,</span> <span class="m">720</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Key</span><span class="p">.</span><span class="n">A</span><span class="p">.</span><span class="n">IsPressed</span><span class="p">())</span>
+      <span class="n">pos</span><span class="p">.</span><span class="n">x</span> <span class="p">+=</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span> <span class="p">*</span> <span class="m">1</span><span class="p">;</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;x: &quot;</span> <span class="p">+</span> <span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">);</span> <span class="c1">// Same as pos[0]</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="vec4">Vec4</h2>
+<p>Four dimensional vector data structure.</p>
+<h3 id="fields_2">Fields</h3>
+<ul>
+<li><code>x</code> First component of the vector. (float)</li>
+<li><code>y</code> Second component of the vector. (float)</li>
+<li><code>z</code> Third component of the vector. (float)</li>
+<li><code>z</code> Fourth component of the vector. (float)</li>
+</ul>
+<h3 id="constructors_2">Constructors</h3>
+<ul>
+<li><code class="highlight"><span class="n">Vec4</span><span class="p">(</span><span class="kt">float</span> <span class="n">n</span><span class="p">)</span></code> Take a scalar and make all components this value.</li>
+<li><code class="highlight"><span class="n">Vec4</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">,</span> <span class="kt">float</span> <span class="n">w</span><span class="p">)</span></code> Take one scalar for each component.</li>
+<li><code class="highlight"><span class="n">Vec4</span><span class="p">(</span><span class="n">Vec2</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">,</span> <span class="kt">float</span> <span class="n">w</span><span class="p">)</span></code> Convert a <code>Vec2</code> to <code>Vec4</code>, adding the third and fourth component.</li>
+<li><code class="highlight"><span class="n">Vec4</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">w</span><span class="p">)</span></code> Convert a <code>Vec3</code> to <code>Vec4</code>, adding the fourth component.</li>
+<li><code class="highlight"><span class="n">Vec4</span><span class="p">(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">)</span></code> Convert a <code>Quat</code> to <code>Vec4</code>.</li>
+</ul>
+<h3 id="methods_2">Methods</h3>
+<ul>
+<li><code class="highlight"><span class="na">[]</span></code> Operator overload to access each respective component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Vec4</span> <span class="n">i</span><span class="p">,</span> <span class="n">Vec4</span> <span class="n">j</span><span class="p">)</span></code> Operator overload.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Vec4</span> <span class="n">i</span><span class="p">,</span> <span class="n">Vec4</span> <span class="n">j</span><span class="p">)</span></code> Operator overload.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Vec4</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">/(</span><span class="n">Vec4</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Vec4</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Vec4</span> <span class="n">i</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="n">Set</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">,</span> <span class="kt">float</span> <span class="n">w</span><span class="p">)</span></code> Set the components of the <code>Vec4</code>.</li>
+<li><code class="highlight"><span class="n">MagnitudeSqrt</span><span class="p">()</span></code> Calculates the magnitude of the <code>Vec4</code>, squared.</li>
+<li><code class="highlight"><span class="n">Magnitude</span><span class="p">()</span></code> Calculates the magnitude of the <code>Vec4</code>.</li>
+<li><code class="highlight"><span class="n">Normalize</span><span class="p">()</span></code> Normalize the <code>Vec4</code> to a length of 1.</li>
+<li><code class="highlight"><span class="n">Dot</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">other</span><span class="p">)</span></code> Calculates the dot product of two <code>Vec4</code>.</li>
+<li><code class="highlight"><span class="n">Angle</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">other</span><span class="p">)</span></code> Calculates the angle respective to other <code>Vec4</code>.</li>
+<li><code class="highlight"><span class="n">DistanceSqrt</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">other</span><span class="p">)</span></code> Calculate the distance between two <code>Vec4</code>, squared.</li>
+<li><code class="highlight"><span class="n">Distance</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">other</span><span class="p">)</span></code> Calculate the distance between two <code>Vec4</code>.</li>
+<li>
+<p><code class="highlight"><span class="n">RGBA</span><span class="p">()</span></code> Return a new <code>Vec4</code> with same components divided by <code>255.0f</code>, except the fourth which is divided by <code>100.0f</code>.</p>
+</li>
+<li>
+<p><code class="highlight"><span class="k">static</span> <span class="nf">zero</span><span class="p">()</span></code> Returns <code>Vec4(0)</code>.</p>
+</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">one</span><span class="p">()</span></code> Returns <code>Vec4(1)</code>.</li>
+</ul>
+<h3 id="example_2">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">VisualKey</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">App</span> <span class="p">{</span>
+
+  <span class="n">Window</span> <span class="n">window</span><span class="p">;</span>
+  <span class="n">Vec4</span> <span class="n">pos</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vec4</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
+
+  <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">x</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vec4</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">30</span><span class="p">,</span> <span class="m">40</span><span class="p">);</span>
+    <span class="n">x</span> <span class="p">+=</span> <span class="m">3</span><span class="p">;</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="c1">// (x: 13, y: 23, z: 33)</span>
+
+    <span class="kt">var</span> <span class="n">d</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="k">new</span> <span class="n">Vec4</span><span class="p">(</span><span class="m">40</span><span class="p">,</span> <span class="m">30</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">10</span><span class="p">));</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">d</span><span class="p">);</span> <span class="c1">// 2300</span>
+
+    <span class="kt">var</span> <span class="n">n</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">Normalize</span><span class="p">();</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="c1">// (x: 0.2155914, y: 0.3814309, z: 0.5472704, w: 0.71311)</span>
+
+    <span class="n">window</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Window</span><span class="p">(</span><span class="m">1280</span><span class="p">,</span> <span class="m">720</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Key</span><span class="p">.</span><span class="n">A</span><span class="p">.</span><span class="n">IsPressed</span><span class="p">())</span>
+      <span class="n">pos</span><span class="p">.</span><span class="n">x</span> <span class="p">+=</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span> <span class="p">*</span> <span class="m">1</span><span class="p">;</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;x: &quot;</span> <span class="p">+</span> <span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">);</span> <span class="c1">// Same as pos[0]</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="mat3">Mat3</h2>
+<p>Three dimensional matrix data structure.</p>
+<h3 id="fields_3">Fields</h3>
+<ul>
+<li><code>row0</code> First component of the matrix. (Vec3)</li>
+<li><code>row1</code> Second component of the matrix. (Vec3)</li>
+<li><code>row2</code> Third component of the matrix. (Vec3)</li>
+</ul>
+<h3 id="constructors_3">Constructors</h3>
+<ul>
+<li><code class="highlight"><span class="n">Mat3</span><span class="p">(</span><span class="kt">float</span> <span class="n">n</span><span class="p">)</span></code> Take a scalar and make all components this value.</li>
+<li><code class="highlight"><span class="n">Mat3</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">row0</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">row1</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">row2</span><span class="p">)</span></code> Take three <code>Vec3</code> and make each row this value.</li>
+<li>Take one scalar per each component of the <code>Mat3</code>:
+<div class="highlight"><pre><span></span><code><span class="n">Mat3</span><span class="p">(</span><span class="kt">float</span> <span class="n">v00</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v01</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v02</span><span class="p">,</span>
+     <span class="kt">float</span> <span class="n">v03</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v04</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v05</span><span class="p">,</span>
+     <span class="kt">float</span> <span class="n">v06</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v07</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v08</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h3 id="methods_3">Methods</h3>
+<ul>
+<li><code class="highlight"><span class="na">[]</span></code> Operator overload to access each respective component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Mat3</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">/(</span><span class="n">Mat3</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Mat3</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Mat3</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Mat3</span> <span class="n">m</span><span class="p">,</span> <span class="n">Mat3</span> <span class="n">other</span><span class="p">)</span></code> Multiply two <code>Mat3</code>.</li>
+<li>
+<p><code class="highlight"><span class="n">ToArray</span><span class="p">()</span></code> Convert <code>Mat3</code> to <code>float[9]</code>.</p>
+</li>
+<li>
+<p><code class="highlight"><span class="k">static</span> <span class="nf">identity</span><span class="p">()</span></code> Returns an identity <code>Mat3</code>.</p>
+</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">zero</span><span class="p">()</span></code> Returns <code>Mat3(0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">one</span><span class="p">()</span></code> Returns <code>Mat3(1)</code>.</li>
+</ul>
+<h3 id="example_3">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">VisualKey</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">App</span> <span class="p">{</span>
+
+  <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">m</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Mat3</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span>
+                     <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">6</span><span class="p">,</span>
+                     <span class="m">7</span><span class="p">,</span> <span class="m">8</span><span class="p">,</span> <span class="m">9</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">o</span> <span class="p">=</span> <span class="n">m</span> <span class="p">*</span> <span class="n">Mat3</span><span class="p">.</span><span class="n">identity</span><span class="p">();</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="mat4">Mat4</h2>
+<p>Four dimensional matrix data structure.</p>
+<h3 id="fields_4">Fields</h3>
+<ul>
+<li><code>row0</code> First component of the matrix. (Vec4)</li>
+<li><code>row1</code> Second component of the matrix. (Vec4)</li>
+<li><code>row2</code> Third component of the matrix. (Vec4)</li>
+<li><code>row3</code> Fourth component of the matrix. (Vec4)</li>
+</ul>
+<h3 id="constructors_4">Constructors</h3>
+<ul>
+<li><code class="highlight"><span class="n">Mat4</span><span class="p">(</span><span class="kt">float</span> <span class="n">n</span><span class="p">)</span></code> Take a scalar and make all components this value.</li>
+<li><code class="highlight"><span class="n">Mat4</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">row0</span><span class="p">,</span> <span class="n">Vec4</span> <span class="n">row1</span><span class="p">,</span> <span class="n">Vec4</span> <span class="n">row2</span><span class="p">,</span> <span class="n">Vec4</span> <span class="n">row3</span><span class="p">)</span></code> Take four <code>Vec4</code> and make each row this value.</li>
+<li>Take one scalar per each component of the <code>Mat4</code>:
+<div class="highlight"><pre><span></span><code><span class="n">Mat4</span><span class="p">(</span><span class="kt">float</span> <span class="n">v00</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v01</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v02</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v03</span><span class="p">,</span>
+     <span class="kt">float</span> <span class="n">v04</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v05</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v06</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v07</span><span class="p">,</span>
+     <span class="kt">float</span> <span class="n">v08</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v09</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v10</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v11</span><span class="p">,</span>
+     <span class="kt">float</span> <span class="n">v12</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v13</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v14</span><span class="p">,</span> <span class="kt">float</span> <span class="n">v15</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h3 id="methods_4">Methods</h3>
+<ul>
+<li><code class="highlight"><span class="na">[]</span></code> Operator overload to access each respective component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Mat4</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">/(</span><span class="n">Mat4</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Mat4</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Mat4</span> <span class="n">m</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Mat4</span> <span class="n">m</span><span class="p">,</span> <span class="n">Mat4</span> <span class="n">other</span><span class="p">)</span></code> Multiply two <code>Mat4</code>.</li>
+<li><code class="highlight"><span class="n">ToArray</span><span class="p">()</span></code> Convert <code>Mat4</code> to <code>float[16]</code>.</li>
+<li><code class="highlight"><span class="n">Scale</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">elements</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">LookAt</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">eye</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">at</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">up</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">Ortho</span><span class="p">(</span><span class="kt">float</span> <span class="n">left</span><span class="p">,</span> <span class="kt">float</span> <span class="n">right</span><span class="p">,</span> <span class="kt">float</span> <span class="n">bottom</span><span class="p">,</span> <span class="kt">float</span> <span class="n">top</span><span class="p">,</span> <span class="kt">float</span> <span class="n">zNear</span><span class="p">,</span> <span class="kt">float</span> <span class="n">zFar</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">Perspective</span><span class="p">(</span><span class="kt">float</span> <span class="n">fov</span><span class="p">,</span> <span class="kt">float</span> <span class="n">aspect</span><span class="p">,</span> <span class="kt">float</span> <span class="n">zNear</span><span class="p">,</span> <span class="kt">float</span> <span class="n">zFar</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">RotateX</span><span class="p">(</span><span class="kt">float</span> <span class="n">angle</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">RotateY</span><span class="p">(</span><span class="kt">float</span> <span class="n">angle</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">RotateZ</span><span class="p">(</span><span class="kt">float</span> <span class="n">angle</span><span class="p">)</span></code></li>
+<li>
+<p><code class="highlight"><span class="n">Translate</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">offset</span><span class="p">)</span></code></p>
+</li>
+<li>
+<p><code class="highlight"><span class="k">static</span> <span class="nf">identity</span><span class="p">()</span></code> Returns an identity <code>Mat3</code>.</p>
+</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">zero</span><span class="p">()</span></code> Returns <code>Mat3(0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">one</span><span class="p">()</span></code> Returns <code>Mat3(1)</code>.</li>
+</ul>
+<h3 id="example_4">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">VisualKey</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">App</span> <span class="p">{</span>
+
+  <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">m</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Mat4</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span>
+                     <span class="m">5</span><span class="p">,</span> <span class="m">6</span><span class="p">,</span> <span class="m">7</span><span class="p">,</span> <span class="m">8</span><span class="p">,</span>
+                     <span class="m">9</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span>
+                     <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">6</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">o</span> <span class="p">=</span> <span class="n">m</span> <span class="p">*</span> <span class="n">Mat4</span><span class="p">.</span><span class="n">identity</span><span class="p">();</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="quat">Quat</h2>
+<p>Quaternion data structure.</p>
+<h3 id="fields_5">Fields</h3>
+<ul>
+<li><code>x</code> First component of the quaternion. (float)</li>
+<li><code>y</code> Second component of the quaternion. (float)</li>
+<li><code>z</code> Third component of the quaternion. (float)</li>
+<li><code>w</code> Fourth component of the quaternion. (float)</li>
+</ul>
+<h3 id="constructors_5">Constructors</h3>
+<ul>
+<li><code class="highlight"><span class="n">Quat</span><span class="p">(</span><span class="kt">float</span> <span class="n">n</span><span class="p">)</span></code> Take a scalar and make all components this value.</li>
+<li><code class="highlight"><span class="n">Quat</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">,</span> <span class="kt">float</span> <span class="n">w</span><span class="p">)</span></code> Take a scalar per each component.</li>
+<li><code class="highlight"><span class="n">Quat</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">v</span><span class="p">)</span></code> Take a <code>Vec4</code> and convert it to <code>Quat</code>.</li>
+<li><code class="highlight"><span class="n">Quat</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">axis</span><span class="p">,</span> <span class="kt">float</span> <span class="n">angle</span><span class="p">)</span></code> Take a <code>Vec3</code> and convert it to <code>Quat</code> by providing an angle.</li>
+<li><code class="highlight"><span class="n">Quat</span><span class="p">(</span><span class="n">Mat3</span> <span class="n">m</span><span class="p">)</span></code> Convert a <code>Mat3</code> to <code>Quat</code>.</li>
+</ul>
+<h3 id="methods_5">Methods</h3>
+<ul>
+<li><code class="highlight"><span class="na">[]</span></code> Operator overload to access each respective component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">/(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">+(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">-(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">,</span> <span class="kt">float</span> <span class="n">k</span><span class="p">)</span></code> Operator overload, scalar affects each component.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">,</span> <span class="n">Quat</span> <span class="n">other</span><span class="p">)</span></code> Operator overload, multiply two <code>Quat</code>.</li>
+<li><code class="highlight"><span class="p">*(</span><span class="n">Quat</span> <span class="n">q</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">v</span><span class="p">)</span></code> Operator overload, multiply <code>Quat</code> with a <code>Vec3</code>.</li>
+<li><code class="highlight"><span class="n">Set</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">,</span> <span class="kt">float</span> <span class="n">w</span><span class="p">)</span></code> Set each component value.</li>
+<li><code class="highlight"><span class="n">Conjugate</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Inverse</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Rotate</span><span class="p">(</span><span class="kt">float</span> <span class="n">angle</span><span class="p">,</span> <span class="n">Vec3</span> <span class="n">v</span><span class="p">)</span></code></li>
+<li><code class="highlight"><span class="n">Roll</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Pitch</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Yaw</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">EulerAngles</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Dot</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Mat3</span><span class="p">()</span></code> Convert <code>Quat</code> to <code>Mat3</code>.</li>
+<li><code class="highlight"><span class="n">Mat4</span><span class="p">()</span></code></li>
+<li><code class="highlight"><span class="n">Mat4</span><span class="p">(</span><span class="n">Vec4</span> <span class="n">v</span><span class="p">)</span></code></li>
+<li>
+<p><code class="highlight"><span class="n">Mat4</span><span class="p">(</span><span class="n">Vec3</span> <span class="n">v</span><span class="p">)</span></code></p>
+</li>
+<li>
+<p><code class="highlight"><span class="k">static</span> <span class="nf">identity</span><span class="p">()</span></code> Returns an identity <code>Mat3</code>.</p>
+</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">zero</span><span class="p">()</span></code> Returns <code>Mat3(0)</code>.</li>
+<li><code class="highlight"><span class="k">static</span> <span class="nf">one</span><span class="p">()</span></code> Returns <code>Mat3(1)</code>.</li>
+</ul>
+<h2 id="mathv">MathV</h2>
+<p>Math utilities to work with <code class="highlight"><span class="kt">float</span></code> values.</p>
+<ul>
+<li><code class="highlight"><span class="n">Radians</span><span class="p">(</span><span class="kt">float</span> <span class="n">angle</span><span class="p">)</span></code> Convert an angle to radians.</li>
+<li><code class="highlight"><span class="n">Clamp</span><span class="p">(</span><span class="kt">float</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">l</span><span class="p">,</span> <span class="kt">float</span> <span class="n">r</span><span class="p">)</span></code></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../input/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Input
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../shader/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Shader
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020–<script>document.write(new Date().getFullYear())</script> SAE Institute México
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/lmariscal" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/lmariscal_" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
